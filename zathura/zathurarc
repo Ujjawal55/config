@@ -1,0 +1,91 @@
+# # https://github.com/rose-pine/rose-pine-theme
+# # Soho vibes for Zathura: Rosé Pine
+# #
+# # Usage:
+# # Copy contents of this file to ~/.config/zathura/zathurarc
+# #
+# # Change 'recolor' and 'recolor-keephue' to true to change
+# # the document colors for a more uniform viewing experience.
+#
+# set default-bg                  "#191724"
+# set default-fg                  "#e0def4"
+#
+# set statusbar-fg                "#e0def4"
+# set statusbar-bg                "#555169"
+#
+# set inputbar-bg                 "#6e6a86"
+# set inputbar-fg                 "#ebbcba"
+#
+# set notification-bg             "#e0def4"
+# set notification-fg             "#555169"
+#
+# set notification-error-bg       "#f6c177"
+# set notification-error-fg       "#555169"
+#
+# set notification-warning-bg     "#ebbcba"
+# set notification-warning-fg     "#555169"
+#
+# set highlight-color             "#ebbcba"
+# set highlight-active-color      "#eb6f92"
+#
+# set completion-bg               "#6e6a86"
+# set completion-fg               "#ebbcba"
+#
+# set completion-highlight-fg     "#26233a"
+# set completion-highlight-bg     "#ebbcba"
+#
+# set recolor-lightcolor          "#191724"
+# set recolor-darkcolor           "#e0def4"
+#
+# set recolor                     "false"
+# set recolor-keephue             "false"
+#
+#
+# from the github link mentioned in here::
+set completion-group-bg         "#282828"
+set completion-group-fg         "#ebdbb2"
+set completion-bg               "#282828"
+set completion-fg               "#ebdbb2"
+set completion-highlight-bg     "#458588"
+set completion-highlight-fg     "#ebdbb2"
+
+set notification-error-bg       "#3c3836"
+set notification-error-fg       "#ebdbb2"
+set notification-warning-bg     "#3c3836"
+set notification-warning-fg     "#ebdbb2"
+set notification-bg             "#3c3836"
+set notification-fg             "#ebdbb2"
+
+set index-bg                    "#1d2021"
+set index-fg                    "#ebdbb2"
+set index-active-bg             "#282828"
+set index-active-fg             "#ebdbb2"
+
+set inputbar-bg                 "#3c3836"
+set inputbar-fg                 "#ebdbb2"
+
+set statusbar-bg                "#282828"
+set statusbar-fg                "#ebdbb2"
+
+set highlight-color             "#458588"
+set highlight-active-color      "#458588"
+
+set default-bg                  "#1d2021"
+set default-fg                  "#001512"
+set recolor-lightcolor          "#282828"
+set recolor-darkcolor           "#ebdbb2"
+
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page-padding 1
+map u scroll half-up
+map d scroll half-down
+map D toggle_page_mode
+map r reload
+map R rotate
+map K zoom in
+map J zoom out
+map i recolor
+set recolor                     true
+map p print
+set selection-clipboard clipboard

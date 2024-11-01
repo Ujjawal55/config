@@ -1,0 +1,14 @@
+{
+	"imageFolderPath": "/home/ujjawal/.config/marktext/images",
+	"screenshotFolderPath": "/home/ujjawal/.config/marktext/screenshot",
+	"webImages": [],
+	"cloudImages": [],
+	"currentUploader": "none",
+	"imageBed": {
+		"github": {
+			"owner": "",
+			"repo": "",
+			"branch": ""
+		}
+	}
+}

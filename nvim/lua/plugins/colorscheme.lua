@@ -1,0 +1,182 @@
+------https://github.com/craftzdog/
+---return {
+---	{
+---		"craftzdog/solarized-osaka.nvim",
+---		lazy = true,
+---		priority = 1000,
+---		-- opts = {
+---		-- 	transparent = true,
+---		-- },
+---		config = function()
+---			require("solarized-osaka").setup({
+---				-- transparent = true,
+---				styles = {
+---					sidebars = "transparent",
+---					floats = "transparent",
+---				},
+---			})
+---		end,
+---	},
+---}
+-- return {
+-- 	{
+-- 		"ellisonleao/gruvbox.nvim",
+-- 		priority = 1000,
+-- 		config = function()
+-- 			require("gruvbox").setup({
+-- 				terminal_colors = true, -- add neovim terminal colors
+-- 				undercurl = true,
+-- 				underline = true,
+-- 				bold = true,
+-- 				italic = {
+-- 					strings = true,
+-- 					emphasis = true,
+-- 					comments = true,
+-- 					operators = false,
+-- 					folds = true,
+-- 				},
+-- 				CursorLine = { bg = "NONE" },
+-- 				strikethrough = true,
+-- 				invert_selection = false,
+-- 				invert_signs = false,
+-- 				invert_tabline = false,
+-- 				invert_intend_guides = false,
+-- 				inverse = true, -- invert background for search, diffs, statuslines and errors
+-- 				contrast = "hard", -- can be "hard", "soft" or empty string
+-- 				palette_overrides = {},
+-- 				overrides = {},
+-- 				dim_inactive = false,
+-- 				transparent_mode = true,
+-- 			})
+-- 			vim.cmd("colorscheme gruvbox")
+-- 		end,
+-- 	},
+-- }
+--
+-- return {
+-- 	{
+-- 		"rose-pine/neovim",
+-- 		name = "rose-pine",
+-- 		opts = {
+-- 			disable_background = true,
+-- 		},
+-- 		config = function()
+-- 			require("rose-pine").setup({
+-- 				disable_background = true,
+-- 				highlight_groups = {
+-- 					CursorLine = { bg = "NONE" },
+-- 				},
+-- 				styles = {
+-- 					transparency = true,
+-- 				},
+-- 			})
+--
+return {
+	"folke/tokyonight.nvim",
+	lazy = false,
+	priority = 1000,
+	config = function()
+		require("tokyonight").setup({
+			transparent = true,
+			style = "night",
+			terminal_colors = true,
+			styles = {
+				sidebars = "transparent",
+				floats = "transparent",
+			},
+		})
+	end,
+}
+
+--
+-- 			-- Function to set up colors
+-- 			local function ColorMyPencils(color)
+-- 				color = color or "rose-pine"
+-- 				vim.cmd.colorscheme(color)
+--
+-- 				vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+-- 				vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+-- 			end
+--
+-- 			-- Call the function to set up colors
+-- 			ColorMyPencils()
+-- 		end,
+-- 	},
+-- }
+-- return {
+-- 	{
+-- 		"catppuccin/nvim",
+-- 		lazy = false,
+-- 		name = "catppuccin",
+-- 		priority = 1000,
+-- 		config = function()
+-- 			require("catppuccin").setup({
+-- 				transparent_background = true,
+-- 				custom_highlights = function()
+-- 					return {
+-- 						CursorLine = { bg = "NONE" },
+-- 					}
+-- 				end,
+-- 			})
+-- 			vim.cmd.colorscheme("catppuccin-mocha")
+-- 		end,
+-- 	},
+--
+-- return {
+-- 	{
+-- 		"sainnhe/sonokai",
+-- 		priority = 1000,
+-- 		config = function()
+-- 			vim.g.sonokai_transparent_background = "1"
+-- 			vim.g.sonokai_enable_italic = "1"
+-- 			vim.g.sonokai_style = "andromeda"
+-- 			vim.cmd.colorscheme("sonokai")
+-- 		end,
+-- 	},
+-- }
+
+-- return {
+-- 	"folke/tokyonight.nvim",
+-- 	priority = 1000,
+-- 	config = function()
+-- 		local transparent = false -- set to true if you would like to enable transparency
+--
+-- 		local bg = "#011628"
+-- 		local bg_dark = "#011423"
+-- 		local bg_highlight = "#143652"
+-- 		local bg_search = "#0A64AC"
+-- 		local bg_visual = "#275378"
+-- 		local fg = "#CBE0F0"
+-- 		local fg_dark = "#B4D0E9"
+-- 		local fg_gutter = "#627E97"
+-- 		local border = "#547998"
+--
+-- 		require("tokyonight").setup({
+-- 			style = "night",
+-- 			transparent = transparent,
+-- 			-- styles = {
+-- 			-- 	sidebars = transparent and "transparent" or "dark",
+-- 			-- 	floats = transparent and "transparent" or "dark",
+-- 			-- },
+-- 			on_colors = function(colors)
+-- 				colors.bg = bg
+-- 				colors.bg_dark = transparent and colors.none or bg_dark
+-- 				colors.bg_float = transparent and colors.none or bg_dark
+-- 				colors.bg_highlight = bg_highlight
+-- 				colors.bg_popup = bg_dark
+-- 				colors.bg_search = bg_search
+-- 				colors.bg_sidebar = transparent and colors.none or bg_dark
+-- 				colors.bg_statusline = transparent and colors.none or bg_dark
+-- 				colors.bg_visual = bg_visual
+-- 				colors.border = border
+-- 				colors.fg = fg
+-- 				colors.fg_dark = fg_dark
+-- 				colors.fg_float = fg
+-- 				colors.fg_gutter = fg_gutter
+-- 				colors.fg_sidebar = fg_dark
+-- 			end,
+-- 		})
+--
+-- 		vim.cmd("colorscheme tokyonight")
+-- 	end,
+-- }
