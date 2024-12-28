@@ -92,6 +92,7 @@ tiling_drag modifier titlebar
 # keybinds to lauch applications 
 bindsym $mod+Return exec kitty
 bindsym $mod+w exec firefox
+bindsym $mod+e exec thunar
 
 # kill focused window
 bindsym $mod+q kill
@@ -128,7 +129,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+space+h split h
+bindsym $mod+Space+h split h
 
 # split in vertical orientation
 bindsym $mod+v split v
@@ -143,9 +144,9 @@ bindsym $mod+Control+p exec --no-startup-id $HOME/.config/scripts/togglePolybar.
 
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+s layout stacking
-bindsym $mod+t layout tabbed
-bindsym $mod+e layout toggle split
+bindsym $mod+Shift+s layout stacking
+bindsym $mod+Shift+t layout tabbed
+bindsym $mod+Shift+e layout toggle split
 
 # toggle tiling / floating
 bindsym $mod+Shift+space floating toggle
@@ -200,7 +201,7 @@ bindsym $mod+Shift+c reload; exec notify-send "reloaded!"
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+# bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
