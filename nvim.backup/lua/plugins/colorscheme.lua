@@ -1,23 +1,23 @@
 ------https://github.com/craftzdog/
----return {
----	{
----		"craftzdog/solarized-osaka.nvim",
----		lazy = true,
----		priority = 1000,
----		-- opts = {
----		-- 	transparent = true,
----		-- },
----		config = function()
----			require("solarized-osaka").setup({
----				-- transparent = true,
----				styles = {
----					sidebars = "transparent",
----					floats = "transparent",
----				},
----			})
----		end,
----	},
----}
+-- -return {
+-- -	{
+-- -		"craftzdog/solarized-osaka.nvim",
+-- -		lazy = true,
+-- -		priority = 1000,
+-- -		-- opts = {
+-- -		-- 	transparent = true,
+-- -		-- },
+-- -		config = function()
+-- -			require("solarized-osaka").setup({
+-- -				-- transparent = true,
+-- -				styles = {
+-- -					sidebars = "transparent",
+-- -					floats = "transparent",
+-- -				},
+-- -			})
+-- -		end,
+-- -	},
+-- -}
 -- return {
 -- 	{
 -- 		"ellisonleao/gruvbox.nvim",

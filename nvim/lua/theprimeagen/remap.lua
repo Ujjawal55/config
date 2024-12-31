@@ -1,4 +1,3 @@
-
 vim.g.mapleader = " "
 vim.keymap.set("i", "jj", "<Esc>")
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
@@ -23,10 +22,10 @@ end)
 vim.keymap.set("x", "<leader>p", [["_dP]])
 
 -- next greatest remap ever : asbjornHaland
-vim.keymap.set({"n", "v"}, "<leader>y", [["+y]])
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 vim.keymap.set("n", "<leader>Y", [["+Y]])
 
-vim.keymap.set({"n", "v"}, "<leader>d", [["_d]])
+vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]])
 
 -- This is going to get me cancelled
 vim.keymap.set("i", "<C-c>", "<Esc>")
@@ -35,6 +34,7 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
+-- navigate between errors
 vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
 vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
 vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
@@ -59,33 +59,31 @@ end)
 
 
 function _G.toggle_warnings()
-	vim.g.show_warnings = not vim.g.show_warnings
+    vim.g.show_warnings = not vim.g.show_warnings
 
-	if vim.g.show_warnings then
-		vim.diagnostic.config({
-			virtual_text = true,
-			signs = true,
-			underline = true,
-			severity_sort = true,
-		})
-		print("Warnings enabled")
-	else
-		vim.diagnostic.config({
-			virtual_text = {
-				severity = { min = vim.diagnostic.severity.ERROR },
-			},
-			signs = {
-				severity = { min = vim.diagnostic.severity.ERROR },
-			},
-			underline = {
-				severity = { min = vim.diagnostic.severity.ERROR },
-			},
-			severity_sort = true,
-		})
-		print("Warnings disabled (Errors still visible)")
-	end
+    if vim.g.show_warnings then
+        vim.diagnostic.config({
+            virtual_text = true,
+            signs = true,
+            underline = true,
+            severity_sort = true,
+        })
+        print("Warnings enabled")
+    else
+        vim.diagnostic.config({
+            virtual_text = {
+                severity = { min = vim.diagnostic.severity.ERROR },
+            },
+            signs = {
+                severity = { min = vim.diagnostic.severity.ERROR },
+            },
+            underline = {
+                severity = { min = vim.diagnostic.severity.ERROR },
+            },
+            severity_sort = true,
+        })
+        print("Warnings disabled (Errors still visible)")
+    end
 end
 
 vim.keymap.set("n", "<leader>tw", toggle_warnings, { desc = "Toggle warnings visibility" })
-
-

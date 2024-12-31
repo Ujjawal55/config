@@ -14,7 +14,7 @@ local local_plugins = {
 
             -- Navigate to marks
             vim.keymap.set("n", "<C-h>", function() harpoon_ui.nav_file(1) end)
-            vim.keymap.set("n", "<C-t>", function() harpoon_ui.nav_file(2) end)
+            vim.keymap.set("n", "<C-l>", function() harpoon_ui.nav_file(2) end)
             vim.keymap.set("n", "<C-n>", function() harpoon_ui.nav_file(3) end)
             vim.keymap.set("n", "<C-s>", function() harpoon_ui.nav_file(4) end)
         end

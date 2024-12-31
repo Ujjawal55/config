@@ -23,6 +23,12 @@ font pango:monospace 0
 # https://wiki.archlinux.org/index.php/XDG_Autostart
 exec --no-startup-id dex --autostart --environment i3
 
+# related to the tableplus
+exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=pkcs11,secrets,ssh
+exec --no-startup-id /usr/bin/gnome-keyring-daemon --start
+
+
+
 
 exec --no-startup-id /usr/lib/xdg-desktop-portal
 
@@ -89,7 +95,7 @@ for_window [class="(?i)file-roller|file-chooser"] floating enable, resize set 80
 # or left-clicking anywhere into the window while holding the floating modifier.
 tiling_drag modifier titlebar
 
-# keybinds to lauch applications 
+# keybinds to lauch applications
 bindsym $mod+Return exec kitty
 bindsym $mod+w exec firefox
 bindsym $mod+e exec thunar
@@ -294,7 +300,7 @@ bindsym $mod+Shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
 
 # kill useless stuff ***************************************************
-exec_always --no-startup-id pkill kwallet 
+exec_always --no-startup-id pkill kwallet
 # this would not be needed in your config, can remove
 
 # setting catppuccin colors ********************************************
